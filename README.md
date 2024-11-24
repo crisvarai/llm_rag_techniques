@@ -15,7 +15,7 @@
 - **Generator**
     - Takes retrieved docs and the input query to generate coherent and contextually relevant responses.
 
-### Naive RAG
+## Naive RAG
 
 - **Indexing**
     - Cleaning, extracting data from docs...
@@ -32,6 +32,28 @@
 4. Inefficient handling of Large-Scale data.
 5. Lack of robustness and adaptability.
 
+## Advanced RAG
+Introduces specific improvements to overcome the limitations of Naive RAG. Focus on enhancing retrieval quality.
+
+Employs the following strategies:
+
+1. Pre-retrieval
+    - Improvement of the indexing structure and user's query.
+    - Improves data details, organization indexes better, adding extra information, aligning things correctly...
+
+2. Post-retrieval
+    - Combine pre-retrieval data with the orginal query (re-ranking to highlight the most important content...)
+
+#### Query Expansion (with generated answers)
+
+Generate potential answers to the query [using an LLM] and to get relevant context.
+
+Use cases:
+- Information Retrieval
+- Question Answering Systems
+- E-commerce Search
+- Academic Research
+
 ## Install dependencies
 
 `pip install openai`
@@ -39,3 +61,15 @@
 `pip install chromadb`
 
 `pip install python-dotenv`
+
+`pip install pypdf`
+
+`pip install pandas`
+
+`pip install langchain`
+
+`pip install sentence-transformers`
+
+`pip install umap-learn`
+
+`pip install matplotlib`
