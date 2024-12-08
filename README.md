@@ -54,22 +54,33 @@ Use cases:
 - E-commerce Search
 - Academic Research
 
-## Install dependencies
+#### Query Expansion (with multiple queries)
 
-`pip install openai`
+Use the LLM to generate additional queries that might help getting the most relevant answer.
 
-`pip install chromadb`
+Use cases:
+- Exploring Data Analysis
+- Academic Research
+- Customer Support
+- Healthcare Information Systems
 
-`pip install python-dotenv`
+#### Downsides
 
-`pip install pypdf`
+- Lots of results, queries might not always be relevant or useful
+- Results not always relevant and/or useful
 
-`pip install pandas`
+## Dependencies
 
-`pip install langchain`
+`openai`
+`chromadb`
+`python-dotenv`
+`pypdf`
+`pandas`
+`langchain`
+`sentence-transformers`
+`umap-learn`
+`matplotlib`
 
-`pip install sentence-transformers`
+#### Run:
 
-`pip install umap-learn`
-
-`pip install matplotlib`
+`pip install -r requirements.txt`
